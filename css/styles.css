@@ -1,0 +1,181 @@
+
+/*******General + header*******/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Metamorphous', cursive;
+  font-size: 0.75rem;
+
+}
+
+legend {
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+
+
+header {
+  border-bottom: solid 5px;
+  text-align: center;
+}
+
+header h1 {
+  background-color: #3f3f3f;
+  padding: 15px 0;
+  margin-top: 0;
+  color: white;
+  font-size: 1.2rem;
+}
+
+header p {
+  width: 80%;
+  margin: -10px auto 1rem auto;
+}
+
+/*******form*******/
+
+fieldset, textarea, input {
+  border: none;
+}
+
+form, .form-second {
+  border-top: solid 3px #000000;
+  margin-top: 5px;
+
+}
+
+legend {
+  padding-top: 30px;
+  text-align: left;
+  font-weight: bold;
+}
+
+input, textarea {
+  background-color: lightgrey;
+  padding-left: 10px
+}
+
+.form-first input:focus, select:focus, textarea:focus {
+  width: 85%;
+  outline: none;
+  border: solid;
+  border-color: blue;
+  border-width: 2px;
+  background-color: darkgrey;
+  transition: 1s;
+}
+
+.form-first{
+  text-align: center;
+}
+
+form label{
+  text-align: left;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #5E5959;
+}
+
+.form-second {
+  background-image: url("../images/news.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-second label {
+  color: white;
+}
+
+.form-first input, select {
+  width: 99%;
+  height: 2.5rem;
+  border-radius: 4px;
+}
+
+.zip input {
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.zip {
+  text-align: left;
+}
+
+::-webkit-input-placeholder {
+  text-align:right;
+  padding-right: 10px;
+}
+
+.form-second label {
+  display: inline-block;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+textarea {
+  display: block;
+  margin:0 auto;
+  padding:0;
+  width: 99%;
+  height: 5rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+button {
+  display: block;
+  margin: 10px auto 20px auto;
+  width: 99%;
+  height: 3rem;
+  color: white;
+  background-color: #008B8B;
+}
+
+footer{
+  text-align: center;
+  margin-bottom: 20px;
+  color: #AEADAD;
+  font-size: 0.5rem;
+  margin-top: 2rem;
+}
+
+/******media query******/
+
+@media (min-width: 768px) {
+
+  .wrapper {
+    width: 70%;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+  .form-first input, .form-first label, select {
+    float: left;
+  }
+
+  .form-first label {
+    width: 30%;
+    margin-top: 30px;
+  }
+
+  .form-first input, select {
+    width: 70%;
+    margin-top: 20px;
+  }
+
+  .form-first input:focus, select:focus, textarea:focus {
+    width: 55%;
+  }
+
+  footer {
+    font-size: 1rem;
+      }
+
+  .zip input  {
+    width: 20%;
+  }
+
+
+}
